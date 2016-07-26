@@ -22,8 +22,8 @@ public class Lab5DiceRoll {
 		do {
 			if (roll.equalsIgnoreCase("y")) {
 
-				value = randomValue.nextInt(5);
-				value2 = randomValue.nextInt(5);
+				value = randomValue.nextInt(6);
+				value2 = randomValue.nextInt(6);
 				System.out.println("Roll: " + (value + 1) + " and " + (value2 + 1));
 
 			} else if (roll.equalsIgnoreCase("n")) {
