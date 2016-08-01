@@ -5,14 +5,12 @@ public class Lab3Powers {
 
 		public static void main(String[] args) {
 			
-	        System.out.println("Welcome to the Squares and Cubes Table");
+	        System.out.println("Learn your squares and cubes");
 	        System.out.println();
-	         
-	        //Scanner object
+	       
 	        Scanner sc = new Scanner(System.in);
-	         
-	         
-	         
+	      
+       	         
 	        String choice = "y";
 	        while(choice.equalsIgnoreCase("y"))
 	        {
@@ -22,7 +20,7 @@ public class Lab3Powers {
 	                 
 	                
 	                System.out.println("Number" + "  " + "Squared" + "  " + "Cubed");       
-	                System.out.println("======" + "  " + "======");
+	                System.out.println("======" + "  " + "======"+ "  " + "======");
 			  for (int i = 1; i <= integerNext; i++)
 		        {      
 		        int numberSquared = (int) Math.pow(i, 2);
@@ -36,6 +34,7 @@ public class Lab3Powers {
 		        System.out.print("Continue? (y/n): ");
 		        choice = sc.next();
 		        System.out.println();
+		        sc.close();
 		        }
 	        }
 	}
