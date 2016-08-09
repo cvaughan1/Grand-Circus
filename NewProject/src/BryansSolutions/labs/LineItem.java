@@ -15,26 +15,31 @@ public class LineItem {
 
 		while (choice.equalsIgnoreCase("y")) {
 			// get input from user
-
+			
 			System.out.print("Enter Product Code:   ");
 			String productCode = sc.nextLine();
-
-			System.out.print("Enter quantity:    ");
+			
+			
+			System.out.print("Enter quantity:    	");
 			int quantity = Integer.parseInt(sc.nextLine());
-
 			// set product price based on product code
-
+			
+			String productDescription = null;
 			double price;
-
+			
 			if (productCode.equalsIgnoreCase("java")) {
+				productDescription = "Murach's Java Programming";
 				price = 57.50;
 			} else if (productCode.equalsIgnoreCase("jsp")) {
 				price = 57.50;
 			} else if (productCode.equalsIgnoreCase("mysql")) {
 				price = 54.50;
+			} else if (productCode.equalsIgnoreCase("android")) {
+				productDescription = "Android Description";
+				price = 30;	
 			} else {
 				price = 0;
-		}
+			}
 
 		// calculate total
 
@@ -45,11 +50,13 @@ public class LineItem {
 		String priceFormatted = currency.format(price);
 		String totalFormatted = currency.format(total);
 		
+		
 		String message = "\nLINE ITEM\n" + 
-		"Code:	    " + productCode + "\n" + 
-		"Price:	    " + priceFormatted + "\n" +
-		"Quantity:	" + quantity + "\n" + 
-		"Total:	    " + totalFormatted + "\n";
+		"Code:	    		" + productCode + "\n" + 
+		"Description:		" + productDescription + "\n" +
+		"Price:			" + priceFormatted + "\n" +
+		"Quantity:	 	" + quantity + "\n" + 
+		"Total:	    		" + totalFormatted + "\n";
 
 		System.out.println(message);
 		
@@ -57,6 +64,7 @@ public class LineItem {
 		System.out.print("Continue? (y/n): ");
 		choice = sc.next();
 		System.out.println();
+		sc.nextLine();
 		}
 	
 	sc.close();
