@@ -36,7 +36,7 @@ public class Lab5DiceRoll {
 		}
 
 		while (rollAgain.equals("y"));
-		System.out.println("Out!!!");
+		System.out.println("Loser!!!");
 		scan.close();
 
 	}
