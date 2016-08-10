@@ -2,6 +2,8 @@ package Labs;
 
 import java.util.Scanner;
 
+import LessonFolder.MiscLessons.English;
+
 public class Lab6Latin {
 
     public static void main(String[] args) {
