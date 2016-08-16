@@ -6,7 +6,7 @@ import java.nio.file.*;
 import Practice.Product;
 
 public class ProductIO {
-    private static final Path productsPath = Paths.get("products.txt");
+    private static final Path productsPath = Paths.get("C:\\Users\\Clark\\Desktop\\products.txt");
     private static final File productsFile = productsPath.toFile();
     private static final String FIELD_SEP = "\t";
     private static List<Product> products = getAll();
