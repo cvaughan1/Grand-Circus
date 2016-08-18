@@ -15,7 +15,7 @@ public class Main {
         // display a welcome message
         System.out.println("Welcome to the Product Manager\n");
 
-        // display the command menu
+        // display the command menu - menu code below
         displayMenu();
 
         // perform 1 or more actions
@@ -103,4 +103,4 @@ public class Main {
                     " was deleted from the database.\n");
         }
     }
-}
+	}
